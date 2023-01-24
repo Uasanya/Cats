@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.catsinfo.CatInfoFragment">
+
+    <ImageView
+        android:id="@+id/iv_cat"
+        android:layout_width="@dimen/iv_info"
+        android:layout_height="@dimen/iv_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/border" />
+
+    <TextView
+        android:id="@+id/tv_cat_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cat"
+        app:layout_constraintStart_toStartOf="@+id/iv_cat"
+        app:layout_constraintTop_toBottomOf="@id/iv_cat"
+        android:text="@string/image_id"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
