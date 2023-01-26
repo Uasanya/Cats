@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -51,5 +52,9 @@ public class CatInfoFragment extends BaseFragment implements Serializable {
         ImageView ivCat = view.findViewById(R.id.iv_cat);
         tvCatId.setText(cat.getId());
         GlideUtils.loadImage(ivCat, cat.getImage());
+        Button back = view.findViewById(R.id.b_back);
+        back.setOnClickListener(view1 -> {
+            navigateBack();
+        });
     }
 }
