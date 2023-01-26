@@ -5,4 +5,6 @@
     <dimen name="margin">16dp</dimen>
     <dimen name="iv_info">300dp</dimen>
     <dimen name="text_size">36sp</dimen>
+    <dimen name="button_dist">300dp</dimen>
+
 </resources>
