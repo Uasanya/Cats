@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.example.srez.R;
 import com.example.srez.ui.base.BaseFragment;
@@ -24,7 +25,7 @@ public class CatInfoFragment extends BaseFragment implements Serializable {
     private Cat cat;
     private static final String ARG_PARAM = "key";
 
-    public static CatInfoFragment newInstance(Cat cat) {
+    public static Fragment newInstance(Cat cat) {
         CatInfoFragment catInfoFragment = new CatInfoFragment();
         Bundle args = new Bundle();
         args.putSerializable(ARG_PARAM, cat);
